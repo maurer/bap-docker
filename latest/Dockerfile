@@ -6,5 +6,5 @@ RUN opam install bap
 RUN opam install utop
 # add python bindings
 RUN sudo apt-get install python-pip -y
-RUN sudo pip install bap
-WORKDIR /home/opam
+RUN sudo pip install git+https://github.com/BinaryAnalysisPlatform/bap.git@v0.9.2
+WORKDIR /home/opam/
